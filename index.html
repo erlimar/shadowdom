@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Shadow DOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var SHADOW_ELEMENT_NAME = 'card';
+    </script>
+    <style>
+        strong {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>My <strong>strong text</strong></p>
+    <card>Erlimar Silva Campos</card>
+    <card>José Bezerra da Silva</card>
+
+    <div>
+        <h1>Isolamento</h1>
+        <p>Este <strong>strong não está isolado</strong>!</p>
+    </div>
+
+    <script src="shadowdom.js"></script>
+</body>
+
+</html>
